@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+#
+# Uncomment this to turn on verbose mode.
+export DH_VERBOSE=1
+export PYBUILD_AFTER_INSTALL := \
+       mv {destdir}/{install_dir}/bdsf/nat/natgridmodule.so \
+               {destdir}/{install_dir}/bdsf/nat/natgridmodulemodule.so
+
+%:
+	dh $@ --with python2 --buildsystem=pybuild

@@ -1,0 +1,7 @@
+Format: http://dep.debian.net/deps/dep5
+Upstream-Name: PyBDSF
+Source: https://github.com/lofar-astron/PyBDSF
+
+Files: *
+Copyright: Astron
+License: GPL-3.0+
